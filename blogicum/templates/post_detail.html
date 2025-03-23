@@ -1,0 +1,10 @@
+{% comment %} Не понял, что ты имел ввиду под "уже есть шаблон и его нужно использовать" {% endcomment %}
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+  <div class="container py-5">
+    {% include 'includes/post.html' %} 
+  </div>
+{% endblock %}
