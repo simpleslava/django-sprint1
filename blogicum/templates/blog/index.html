@@ -1,12 +1,11 @@
 {% extends 'base.html' %}
- 
- {% block title %}Лента записей{% endblock %}
- 
- {% block content %}
- <article class="container py-5">
-     {% for post in posts reversed %}
-         {% include 'includes/post.html' %}
-     {% endfor %}
- </article>
- {% endblock %}
- 
+
+{% block title %}Лента записей{% endblock %}
+
+{% block content %}
+<article class="container py-5">
+    {% for post in posts reversed %}
+        {% include 'includes/post.html' %}
+    {% endfor %}
+</article>
+{% endblock %}
