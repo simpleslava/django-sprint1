@@ -1,11 +1,11 @@
-{% extends 'base.html' %} 
- 
-{% block title %}Лента записей{% endblock %} 
- 
-{% block content %} 
-  <div class="container py-5"> 
-    {% for post in posts %} 
+{% extends 'base.html' %}
+
+{% block title %}Лента записей{% endblock %}
+
+{% block content %}
+  <div class="container py-5">
+    {% for post in posts %}
       {% for post in posts reversed %}
-    {% endfor %} 
-  </div> 
+    {% endfor %}
+  </div>
 {% endblock %}
