@@ -65,10 +65,8 @@ def index(request):
 def post_detail(request, post_id):
     if post_id not in POSTS_DICT:
         raise Http404('Страница не найдена!')
-    context = {'post': POSTS_DICT[post_id]}
-    return render(request, 'blog/detail.html', context)
+    return render(request, 'blog/detail.html', {'post': POSTS_DICT[post_id]})
 
 
 def category_posts(request, category_slug):
-    context = {'category_slug': category_slug}
-    return render(request, 'blog/category.html', context)
+    return render(request, 'blog/category.html', {'category_slug': category_slug})
