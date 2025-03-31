@@ -3,9 +3,9 @@
 {% block title %}Лента записей{% endblock %}
 
 {% block content %}
-<div class="container py-5">
+<article class="container py-5">
     {% for post in posts reversed %}
         {% include 'includes/post.html' %}
     {% endfor %}
-</div>
+</article>
 {% endblock %}
